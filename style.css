@@ -306,17 +306,16 @@ small {
   font-weight: lighter;
 }
 
-
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.google-maps {
+    position: relative;
+    padding-bottom: 150%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
 }
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
